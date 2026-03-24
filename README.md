@@ -8,7 +8,7 @@ HyprX is my personal Hyprland rice, crafted over weeks of breaking configs, fixi
 
 ## 📸 Preview
 
-> *(Add your screenshots here)*
+> *(Will be added later)*
 
 ---
 

@@ -65,7 +65,7 @@ tooltip {
 #tray {
     background-color: @bg0;
     padding: 0 15px 0 15px;
-    margin: 0 0 0 12px;
+    margin: 0 0 0 4px;
     border-radius: 50px;
     border: 1px solid @bg1;
 }
@@ -73,12 +73,13 @@ tooltip {
 #battery,
 #pulseaudio,
 #network,
+#bluetooth,
 #clock,
 #memory,
 #custom-notification {
     background-color: @bg0;
     padding: 0 15px 0 15px;
-    margin: 0 0 0 12px;
+    margin: 0 0 0 4px;
     border-radius: 50px;
     border: 1px solid @bg1;
 }
@@ -90,6 +91,10 @@ tooltip {
 #custom-notification {
     color: @red;
     font-family: "JetBrainsMono Nerd Font Mono";
+}
+
+#bluetooth {
+    color: @yellow;
 }
 
 #pulseaudio {

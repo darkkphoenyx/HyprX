@@ -77,7 +77,6 @@ PACMAN_PACKAGES=(
     "sbctl"          # Secure boot management
     "hyprland"       # Wayland compositor
     "kitty"          # Terminal emulator
-    "swww"           # Wallpaper daemon
     "hyprpaper"      # Wallpaper utility for Hyprland
     "rofi"           # Application launcher
     "waybar"         # Status bar

@@ -6,12 +6,7 @@
   "display": "flex",
   "flex-direction": "column",
 
-  "modules-left": [
-    "hyprland/workspaces",
-    "tray",
-    "custom/bluetooth",
-    "bluetooth",
-  ],
+  "modules-left": ["hyprland/workspaces", "tray", "bluetooth"],
   "modules-center": ["clock"],
   "modules-right": [
     "custom/brightness",
@@ -21,16 +16,6 @@
     "battery",
     "custom/notification",
   ],
-
-  "bluetooth": {
-    "format": "{status}",
-    "format-connected": "{device_alias} {device_battery_percentage}% ",
-    "format-connected-battery": "{device_alias} {device_battery_percentage}%",
-    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-  },
 
   "hyprland/workspaces": {
     "format": "{name}",
@@ -50,8 +35,19 @@
   },
 
   "tray": {
-    "icon-size": 21,
-    "spacing": 10,
+    "icon-size": 18,
+    "spacing": 5,
+  },
+
+  "bluetooth": {
+    "format": "{status}",
+    "format-connected": "{device_alias}",
+    "format-connected-battery": "{device_alias} {device_battery_percentage}%",
+    // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
   },
 
   "clock": {
@@ -81,11 +77,11 @@
   "network": {
     "interface": "wlan0", //command to get the network card: ip -c a
     "format": "{ifname}",
-    "format-wifi": "{essid}  ",
+    "format-wifi": "{essid} ",
     "format-ethernet": "{ipaddr}/{cidr} 󰊗",
     "format-disconnected": "Disconnected", //An empty format will hide the module.
     "tooltip-format": "{ifname} via {gwaddr} 󰊗",
-    "tooltip-format-wifi": "{essid}  ",
+    "tooltip-format-wifi": "{essid}  \n{ipaddr}",
     "tooltip-format-ethernet": "{ifname} ",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,

@@ -12,7 +12,7 @@ echo "Starting Dotfiles setup..."
 mkdir -p "$DOTFILES"
 
 # List of apps to symlink
-apps=("hypr" "kitty" "rofi" "waybar" "swaync")
+apps=("hypr" "kitty" "rofi" "waybar" "swaync", "scripts")
 
 for app in "${apps[@]}"; do
     if [ -e "$CONFIG/$app" ] && [ ! -L "$CONFIG/$app" ]; then

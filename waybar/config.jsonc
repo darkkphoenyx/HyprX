@@ -51,9 +51,9 @@
   },
 
   "clock": {
-    "interval": 60,
     "format": "{:%H:%M}",
-    "max-length": 25,
+    "format-alt": "{:%a, %b %d, %Y (%R)}",
+    "tooltip": false,
   },
 
   "custom/brightness": {
@@ -85,6 +85,7 @@
     "tooltip-format-ethernet": "{ifname} ",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
+    "on-click": "~/HyprX/scripts/rofi-wifi-menu.sh",
   },
 
   "memory": {

@@ -79,6 +79,10 @@ PACMAN_PACKAGES=(
     "kitty"          # Terminal emulator
     "hyprpaper"      # Wallpaper utility for Hyprland
     "rofi"           # Application launcher
+    "rofi-emoji"     # Emoji
+    "xdotool"        # Emoji dependency
+    "wtype"          # Dependency
+    "noto-font-emoji"
     "waybar"         # Status bar
     "swaync"         # Notification daemon
     "man"            # Manual pages
@@ -221,7 +225,7 @@ print_status "Starting HyprX symlink setup..."
 mkdir -p "$HyprX"
 
 # List of config directories to symlink
-apps=("hypr" "kitty" "rofi" "waybar" "swaync")
+apps=("hypr" "kitty" "rofi" "waybar" "swaync", "scripts")
 
 for app in "${apps[@]}"; do
     # Check if the app directory exists in HyprX

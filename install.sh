@@ -95,6 +95,8 @@ PACMAN_PACKAGES=(
     "blueman"        # Bluetooth
     "bluez"          # Blueman Dependency
     "bluez-utils"    # Dependency
+    "hyprshot"       # Screenshot
+    "satty"          # Annotate on screenshot tool
 )
 
 # Array of packages to install via yay (AUR)

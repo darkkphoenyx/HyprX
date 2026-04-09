@@ -26,7 +26,7 @@
   border-radius: 16px;
   border: 1px solid @selected;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .6);
-  margin: 18px;
+  margin: 9px;
   padding: 12px;
 }
 

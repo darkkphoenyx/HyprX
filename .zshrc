@@ -1,3 +1,4 @@
+fastfetch --kitty-direct /home/darkkphoenyx/.config/fastfetch/pngs/image.png
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -29,6 +30,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases for common commands
 alias ls="exa -la"
+alias wf="wifite"
 
 # Source Powerlevel10k configuration if it exists
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

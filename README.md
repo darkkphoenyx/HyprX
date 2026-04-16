@@ -14,14 +14,14 @@ HyprX is my personal Hyprland rice, crafted over weeks of breaking configs, fixi
 
 ## ✨ Features
 
-- ⚡ Hyprland-based Wayland setup  
-- 🖥️ Clean and minimal UI  
-- 🎨 Custom Waybar, Rofi, Kitty configs  
-- 🔔 Notifications via swaync  
-- 🌙 Hyprsunset (night light)  
-- 🧠 Zsh + Oh My Zsh + Powerlevel10k  
-- 🔗 Fully symlinked config structure  
-- 📦 Automated install script  
+- ⚡ Hyprland-based Wayland setup
+- 🖥️ Clean and minimal UI
+- 🎨 Custom Waybar, Rofi, Kitty configs
+- 🔔 Notifications via swaync
+- 🌙 Hyprsunset (night light)  `
+- 🧠 Zsh + Oh My Zsh + Powerlevel10k
+- 🔗 Fully symlinked config structure
+- 📦 Automated install script
 
 ---
 
@@ -29,14 +29,14 @@ HyprX is my personal Hyprland rice, crafted over weeks of breaking configs, fixi
 
 This setup touches a lot of Linux concepts:
 
-- TTY / Shells  
-- Wayland vs Xorg  
-- Window Managers vs Desktop Environments  
-- Compositors  
-- GRUB / EFI / NVRAM  
-- systemd  
-- Dotfiles & Symlinks  
-- Package managers (pacman + yay)  
+- TTY / Shells
+- Wayland vs Xorg
+- Window Managers vs Desktop Environments
+- Compositors
+- GRUB / EFI / NVRAM
+- systemd
+- Dotfiles & Symlinks
+- Package managers (pacman + yay)
 
 ---
 

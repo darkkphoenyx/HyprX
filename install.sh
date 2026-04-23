@@ -97,6 +97,7 @@ PACMAN_PACKAGES=(
     "bluez-utils"    # Dependency
     "hyprshot"       # Screenshot
     "satty"          # Annotate on screenshot tool
+    "yazi"           # file manager
 )
 
 # Array of packages to install via yay (AUR)
@@ -227,7 +228,7 @@ print_status "Starting HyprX symlink setup..."
 mkdir -p "$HyprX"
 
 # List of config directories to symlink
-apps=("hypr" "kitty" "rofi" "waybar" "swaync", "scripts")
+apps=("hypr" "kitty" "rofi" "waybar" "swaync" "scripts" "fastfetch")
 
 for app in "${apps[@]}"; do
     # Check if the app directory exists in HyprX

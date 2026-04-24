@@ -167,7 +167,7 @@ progressbar {
 }
 
 .widget-dnd>switch {
-  background: @background;
+  background: transparent;
   font-size: initial;
   border-radius: 8px;
   box-shadow: none;
@@ -176,15 +176,15 @@ progressbar {
 }
 
 .widget-dnd>switch:hover {
-  background: @secondary;
+  background: transparent;
 }
 
 .widget-dnd>switch:checked {
-  background: @background;
+  background: transparent;
 }
 
 .widget-dnd>switch:checked:hover {
-  background: @secondary;
+  background: transparent;
 }
 
 .widget-dnd>switch slider {
@@ -217,7 +217,7 @@ progressbar {
 
 /* Music player */
 .widget-mpris {
-  background: @background;
+  background: transparent;
   border-radius: 16px;
   color: @primary;
   margin: 20px 6px;
@@ -225,7 +225,7 @@ progressbar {
 
 /* NOTE: Background need *opacity 1* otherwise will turn into the album art blurred  */
 .widget-mpris-player {
-  background-color: @background;
+  background-color: transparent;
   border-radius: 22px;
   padding: 6px 14px;
   margin: 6px;

@@ -124,3 +124,14 @@ tooltip {
     border-radius: 50px;
     border: 1px solid @background;
 }
+
+tooltip {
+    background-color: @background;
+    color: @primary;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+tooltip label {
+    color: @primary;
+}

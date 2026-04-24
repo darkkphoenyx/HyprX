@@ -217,32 +217,31 @@ progressbar {
 
 /* Music player */
 .widget-mpris {
-  background: @primary;
+  background: @background;
   border-radius: 16px;
-  color: @background;
+  color: @primary;
   margin: 20px 6px;
-  padding: 0px 20px;
 }
 
 /* NOTE: Background need *opacity 1* otherwise will turn into the album art blurred  */
 .widget-mpris-player {
-  background-color: @primary;
+  background-color: @background;
   border-radius: 22px;
   padding: 6px 14px;
   margin: 6px;
 }
 
 .widget-mpris>box>button {
-  color: @background;
+  color: @primary;
   border-radius: 20px;
 }
 
 .widget-mpris button {
-  color: alpha(@background, .6);
+  color: alpha(@primary, .6);
 }
 
 .widget-mpris button:hover {
-  color: @background;
+  color: @primary;
 }
 
 .widget-mpris-album-art {

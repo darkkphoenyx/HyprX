@@ -90,33 +90,33 @@ tooltip {
 }
 
 #custom-notification {
-    color: #F28FAD;
+    color: @primary;
     font-family: "JetBrainsMono Nerd Font Mono";
 }
 
 #bluetooth {
-    color: @tertiary;
+    color: @primary;
 }
 
 #pulseaudio {
-    color: @tertiary;
+    color: @primary;
 }
 
 #network {
-    color: @surface_tint;
+    color: @primary;
 }
 
 #battery {
-    color: @tertiary;
+    color: @primary;
 }
 
 #memory {
-    color: @primary_fixed;
+    color: @primary;
     font-family: JetBrains Nerd Font Propo;
 }
 
 #custom-brightness {
-    color: @secondary;
+    color: @primary;
     min-width: 40px;
     background-color: @background;
     padding: 0 15px 0 15px;

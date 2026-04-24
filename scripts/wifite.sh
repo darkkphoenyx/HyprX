@@ -1,33 +1,3 @@
-# #!/usr/bin/env bash
-
-# # Check if SSID is provided
-# if [ -z "$1" ]; then
-#     echo "Usage: wifite <SSID>"
-#     exit 1
-# fi
-
-# SSID="$1"
-
-# # Try to get password
-# PASSWORD=$(nmcli -s -g 802-11-wireless-security.psk connection show "$SSID" 2>/dev/null)
-
-# # If empty, try with sudo
-# if [ -z "$PASSWORD" ]; then
-#     PASSWORD=$(sudo nmcli -s -g 802-11-wireless-security.psk connection show "$SSID" 2>/dev/null)
-# fi
-
-# # Output result
-# if [ -z "$PASSWORD" ]; then
-#     echo "❌ No password found for SSID: $SSID"
-# else
-#     echo "📶 SSID: $SSID"
-#     echo "🔑 Password: $PASSWORD"
-#     echo "$PASSWORD" | wl-copy | notify-send "📶 Password: $PASSWORD"
-# fi
-
-
-
-
 #!/usr/bin/env bash
 
 # Function: list all saved Wi-Fi networks

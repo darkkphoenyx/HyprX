@@ -1,9 +1,4 @@
-@define-color text @fg;
-@define-color background-alt @bg0;
-@define-color selected @blue;
-@define-color hover alpha(@selected, .4);
-@define-color urgent @red;
-@define-color background @bg0;
+@import "../../colors.css"
 
 * {
   color: @text;
@@ -22,12 +17,13 @@
 /* CONTROL CENTER ------------------------------------------------------------------------ */
 
 .control-center {
-  background: @background;
+  background: alpha(@background, 0.9);
   border-radius: 16px;
-  border: 1px solid @selected;
+  border: 1px solid @primary;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .6);
   margin: 9px;
   padding: 12px;
+  color: @primary;
 }
 
 /* Notifications  */
@@ -35,12 +31,14 @@
 .control-center .notification-row .notification-background .notification.critical {
   background-color: @background;
   border-radius: 16px;
+  color: @secondary;
   margin: 4px 0px;
   padding: 4px;
+  border: 1px solid @secondary
 }
 
 .control-center .notification-row .notification-background .notification.critical {
-  color: @urgent;
+  color: @error;
 }
 
 .control-center .notification-row .notification-background .notification .notification-content {
@@ -48,28 +46,31 @@
   padding: 8px 6px 2px 2px;
 }
 
+/* this is the notification shown in NC */
 .control-center .notification-row .notification-background .notification>*:last-child>* {
   min-height: 3.4em;
+  color: @secondary;
+
 }
 
 .control-center .notification-row .notification-background .notification>*:last-child>* .notification-action {
-  background: @selected;
-  color: @text;
+  background: @background;
+  color: @primary;
   border-radius: 12px;
   margin: 6px;
 }
 
 .control-center .notification-row .notification-background .notification>*:last-child>* .notification-action:hover {
-  background: @selected;
+  background: @primary;
 }
 
 .control-center .notification-row .notification-background .notification>*:last-child>* .notification-action:active {
-  background-color: @selected;
+  background-color: @primary;
 }
 
 /* Buttons */
 .control-center .notification-row .notification-background .close-button {
-  background: @backgroud-alt;
+  background: @primary;
   border-radius: 6px;
   color: @text;
   margin: 0px;
@@ -77,11 +78,11 @@
 }
 
 .control-center .notification-row .notification-background .close-button:hover {
-  background-color: @selected;
+  background-color: @primary;
 }
 
 .control-center .notification-row .notification-background .close-button:active {
-  background-color: @selected;
+  background-color: @primary;
 }
 
 progressbar,
@@ -103,18 +104,18 @@ progressbar {
 .notification-group-headers {
   font-weight: bold;
   font-size: 1.25rem;
-  color: @text;
+  color: @primary;
   letter-spacing: 2px;
 }
 
 .notification-group-icon {
-  color: @text;
+  color: @primary;
 }
 
 .notification-group-collapse-button,
 .notification-group-close-all-button {
   background: transparent;
-  color: @text;
+  color: @primary;
   margin: 4px;
   border-radius: 6px;
   padding: 4px;
@@ -122,7 +123,7 @@ progressbar {
 
 .notification-group-collapse-button:hover,
 .notification-group-close-all-button:hover {
-  background: @hover;
+  background: @background;
 }
 
 /* WIDGETS --------------------------------------------------------------------------- */
@@ -131,30 +132,36 @@ progressbar {
 .widget-title {
   font-size: 1.2em;
   margin: 6px;
-  border-top: 1px solid gray;
+  border-top: 1px solid @primary;
   padding-top: 8px;
+  color: @primary;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .widget-title button {
-  background: @blue;
+  background: @primary;
   font-weight: 500;
   font-size: 9px;
-  color: @bg0;
+  color: @background;
   border-radius: 6px;
   padding: 4px 16px;
   cursor: pointer;
 }
 
 .widget-title button:hover {
-  background-color: @hover;
+  background-color: @secondary;
 }
 
 .widget-title button:active {
-  background-color: @selected;
+  background-color: @secondary;
 }
 
 /* Do not disturb */
 .widget-dnd {
+  color: @primary;
+  font-size: 12px;
+  font-weight: 600;
   margin: 6px;
   font-size: 1.2rem;
 }
@@ -165,22 +172,23 @@ progressbar {
   border-radius: 8px;
   box-shadow: none;
   padding: 2px;
+  border: 1px solid @primary;
 }
 
 .widget-dnd>switch:hover {
-  background: @hover;
+  background: @secondary;
 }
 
 .widget-dnd>switch:checked {
-  background: @selected;
+  background: @background;
 }
 
 .widget-dnd>switch:checked:hover {
-  background: @hover;
+  background: @secondary;
 }
 
 .widget-dnd>switch slider {
-  background: @text;
+  background: @primary;
   border-radius: 6px;
 }
 
@@ -188,54 +196,58 @@ progressbar {
 .widget-buttons-grid {
   font-size: x-large;
   padding: 6px 2px;
+  padding-left: 20px;
   margin: 6px;
   border-radius: 12px;
-  background: @background;
+  background: @primary;
+  color: @background;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button {
   margin: 4px 10px;
   padding: 6px 12px;
-  background: transparent;
+  background: @primary;
   border-radius: 8px;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
-  background: @hover;
+  background: @primary;
 }
 
 
 /* Music player */
 .widget-mpris {
-  background: @background;
+  background: @primary;
   border-radius: 16px;
-  color: @text;
+  color: @background;
   margin: 20px 6px;
+  padding: 0px 20px;
 }
 
 /* NOTE: Background need *opacity 1* otherwise will turn into the album art blurred  */
 .widget-mpris-player {
-  background-color: @background;
+  background-color: @primary;
   border-radius: 22px;
   padding: 6px 14px;
   margin: 6px;
 }
 
 .widget-mpris>box>button {
-  color: @text;
+  color: @background;
   border-radius: 20px;
 }
 
 .widget-mpris button {
-  color: alpha(@text, .6);
+  color: alpha(@background, .6);
 }
 
 .widget-mpris button:hover {
-  color: @text;
+  color: @background;
 }
 
 .widget-mpris-album-art {
-  border-radius: 16px;
+  margin-bottom: 10px;
+  border-radius: 14px;
 }
 
 .widget-mpris-title {
@@ -249,13 +261,14 @@ progressbar {
 }
 
 picture.mpris-background {
-  opacity: 0;
+  opacity: 0.0;
+  border-radius: 14px;
 }
 
 /* Volume */
 .widget-volume {
   background: @background;
-  color: @background;
+  color: @primary;
   padding: 4px;
   margin: 6px;
   border-radius: 6px;

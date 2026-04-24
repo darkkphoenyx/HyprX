@@ -1,4 +1,3 @@
-@import "colors/catppuccin.css";
-@import 'themes/catppuccin/central_control.css';
-@import 'themes/catppuccin/notifications.css';
-
+@import "colors.css";
+@import 'themes/central_control.css';
+@import 'themes/notifications.css';

@@ -271,6 +271,7 @@ yay -S nwg-look
 yay -S adw-gtk-theme
 yay -S ristretto
 yay -S baobab
+yay -S matugen-bin
 
 # Symlink home HyprX
 HOME_HyprX=(".zshrc" ".p10k.zsh" ".bashrc")

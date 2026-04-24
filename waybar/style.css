@@ -1,4 +1,5 @@
-@import "colors/catppuccin.css";
+/* @import "colors/catppuccin.css"; */
+@import "colors.css";
 
 * {
     border: none;
@@ -20,42 +21,42 @@ tooltip {
 }
 
 #workspaces {
-    background-color: @bg0;
+    background-color: @background;
     padding: 5px 3px;
     margin: 0 0 0 12px;
     border-radius: 18px;
-    border: 1px solid @bg1;
-    color: @fg;
+    border: 1px solid @background;
+    color: @tertiary;
 }
 
 #workspaces button {
     padding: 0px 6px;
     margin: 0px 3px;
     border-radius: 50px;
-    color: @blue;
-    background-color: @bg1;
+    color: @primary;
+    background-color: @on_primary;
     transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
-    background-color: @blue;
-    color: @bg0;
+    background-color: @primary;
+    color: @background;
     min-width: 50px;
     transition: all 0.3s ease-in-out;
     font-size: 13px;
 }
 
 #workspaces button:hover {
-    background-color: @purple;
-    color: @bg0;
+    background-color: @secondary;
+    color: @surface;
     min-width: 50px;
     border-radius: 16px;
     background-size: 400% 400%;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
-    color: @bg0;
+    background-color: @tertiary;
+    color: @surface;
     border-radius: 16px;
     min-width: 50px;
     background-size: 400% 400%;
@@ -63,11 +64,11 @@ tooltip {
 }
 
 #tray {
-    background-color: @bg0;
+    background-color: @background;
     padding: 0 15px 0 15px;
     margin: 0 0 0 4px;
     border-radius: 50px;
-    border: 1px solid @bg1;
+    border: 1px solid @background;
 }
 
 #battery,
@@ -77,49 +78,49 @@ tooltip {
 #clock,
 #memory,
 #custom-notification {
-    background-color: @bg0;
+    background-color: @background;
     padding: 0 15px 0 15px;
     margin: 0 0 0 4px;
     border-radius: 50px;
-    border: 1px solid @bg1;
+    border: 1px solid @background;
 }
 
 #clock {
-    color: @blue;
+    color: @primary;
 }
 
 #custom-notification {
-    color: @red;
+    color: #F28FAD;
     font-family: "JetBrainsMono Nerd Font Mono";
 }
 
 #bluetooth {
-    color: @yellow;
+    color: @tertiary;
 }
 
 #pulseaudio {
-    color: @yellow;
+    color: @tertiary;
 }
 
 #network {
-    color: @purple;
+    color: @surface_tint;
 }
 
 #battery {
-    color: @green;
+    color: @tertiary;
 }
 
 #memory {
-    color: @aqua;
+    color: @primary_fixed;
     font-family: JetBrains Nerd Font Propo;
 }
 
 #custom-brightness {
-    color: orange;
+    color: @secondary;
     min-width: 40px;
-    background-color: @bg0;
+    background-color: @background;
     padding: 0 15px 0 15px;
     margin: 0 0 0 12px;
     border-radius: 50px;
-    border: 1px solid @bg1;
+    border: 1px solid @background;
 }

@@ -86,30 +86,30 @@
     {
       "type": "host",
       "key": "  Device    ",
-      "keyColor": "40",
+      "keyColor": "50",
     },
     {
       "type": "cpu",
       "key": "  CPU       ",
       "format": "{name} @ {freq-max}",
-      "keyColor": "40",
+      "keyColor": "50",
     },
     {
       "type": "gpu",
       "key": " 󰢮 GPU       ",
       "format": "{name}",
-      "keyColor": "40",
+      "keyColor": "50",
     },
     {
       "key": "  RAM       ",
       "type": "memory",
-      "keyColor": "40",
+      "keyColor": "50",
       "format": "{used} / {total} ({percentage})",
     },
     {
       "key": "  SWAP      ",
       "type": "swap",
-      "keyColor": "40",
+      "keyColor": "50",
       "format": "{used} / {total} ({percentage})",
     },
     // {

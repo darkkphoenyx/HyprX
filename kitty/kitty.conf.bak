@@ -14,7 +14,7 @@ cursor_blink_interval 0
 # Window
 remember_window_size  no
 window_padding_width  10
-background_opacity    0.9
+background_opacity    0.65
 
 # Scrollbar (hidden)
 scrollbar_handle_opacity       0
@@ -50,3 +50,9 @@ color14 #56b6c2
 color15 #abb2bf
 selection_foreground #282c34
 selection_background #979eab
+
+
+# BEGIN_KITTY_THEME
+# Matugen
+# include current-theme.conf
+# END_KITTY_THEME

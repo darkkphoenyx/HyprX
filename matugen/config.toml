@@ -19,7 +19,7 @@ post_hook = "swaync-client -rs"
 input_path = '~/.config/matugen/templates/rofi-colors.rasi'
 output_path = '~/.config/rofi/colors.rasi'
 
-[templates.kitty]
-input_path = '~/.config/matugen/templates/kitty-colors.conf'
-output_path = '~/.config/kitty/themes/Matugen.conf'
-post_hook = "kitty +kitten themes --reload-in=all Matugen"
+# [templates.kitty]
+# input_path = '~/.config/matugen/templates/kitty-colors.conf'
+# output_path = '~/.config/kitty/themes/Matugen.conf'
+# post_hook = "kitty +kitten themes --reload-in=all Matugen"

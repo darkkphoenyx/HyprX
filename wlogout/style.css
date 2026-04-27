@@ -4,7 +4,7 @@ window {
     font-family: JetBrains Mono Nerd Propo;
     font-size: 16pt;
     color: @primary;
-    background-color: alpha(@background, 0.8);
+    background-color: alpha(@background, 0.85);
 
 }
 
@@ -24,14 +24,14 @@ button {
 
 button:focus {
     box-shadow: none;
-    background-size: 20%;
+    background-size: 15%;
     border: none;
     outline: none;
     background-color: @primary;
 }
 
 button:hover {
-    background-size: 20%;
+    background-size: 15%;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, .4);
     background-color: @primary;
     color: @secondary;

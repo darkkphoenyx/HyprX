@@ -6,7 +6,7 @@ HyprX is my personal **Hyprland rice**, built over weeks of breaking configurati
 
 This repository contains everything that makes up my desktop environment — from Hyprland and Waybar to Kitty, Rofi, shell theming, notifications, and dynamic color generation.
 
-Feel free to **rice it** as per your taste.
+**Feel free to rice it to your taste.**
 
 <p align="center">
   <img src="https://img.shields.io/badge/HyprX-%20minimal%20and%20mine-1e1e2e?style=for-the-badge&labelColor=1e1e2e&color=a6e3a1" />

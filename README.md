@@ -28,6 +28,7 @@ This repository contains everything that makes up my desktop environment — fro
 ![](./preview-images/preview10.png)
 ![](./preview-images/preview11.png)
 ![](./preview-images/preview12.png)
+![](./preview-images/preview13.png)
 
 ---
 
@@ -37,6 +38,7 @@ This repository contains everything that makes up my desktop environment — fro
 - 🖥️ Clean, minimal, and distraction-free interface
 - 🎨 Custom Waybar, Rofi, Kitty, and SwayNC configurations
 - 🎨 Matugen-powered dynamic theming
+- 🔒 Custom wlogout power menu with Hyprlock screen locking
 - 🔔 SwayNC notification system
 - 🌙 Hyprsunset for night-light and blue-light filtering
 - 🧠 Zsh with Oh My Zsh and Powerlevel10k
@@ -53,6 +55,7 @@ This repository contains everything that makes up my desktop environment — fro
 - 📊 **Status Bar:** Waybar
 - 🚀 **Application Launcher:** Rofi
 - 🖥️ **Terminal:** Kitty
+- 🔒 **Power Management:** WLogout + Hyprlock
 - 🔔 **Notifications:** SwayNC
 - 🌙 **Night Light:** Hyprsunset
 - 🎨 **Theming:** Matugen

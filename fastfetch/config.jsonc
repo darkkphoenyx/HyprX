@@ -31,10 +31,6 @@
   },
   "modules": [
     "break",
-    // {
-    //   "type": "custom",
-    //   "format": "  ┏━━━━━━━━━━━━━━━━━━━━━━━ System Info ━━━━━━━━━━━━━━━━━━━━━━━┓",
-    // },
     {
       "type": "title",
       "format": "  ┏━━━━━━━━━━━━━━━━━━  {#yellow}{user-name}{#} @ {#yellow}{host-name}{#}  ━━━━━━━━━━━━━━━━━┓",
@@ -112,29 +108,12 @@
       "keyColor": "34",
       "format": "{used} / {total} ({percentage})",
     },
-    // {
-    //   "key": "  SD Card   ",
-    //   "type": "disk",
-    //   "keyColor": "35",
-    //   "folders": "/mnt/media_rw/F590-80EE", // If doesn't change the dir, add "{mountpoint}" in "format": down bellow to know your external storage path.
-    //   "format": "{size-used} / {size-total} ({size-percentage})",
-    // },
-    // {
-    //   "key": " ",
-    //   "type": "disk",
-    //   "keyColor": "35",
-    //   "folders": "/mnt/media_rw/F590-80EE",
-    //   "format": "     {size-percentage-bar}",
-    // },
+
     "break",
     {
       "type": "custom",
       "format": "  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━ {#yellow}Welcome{#} ━━━━━━━━━━━━━━━━━━━━━━━━┛",
     },
-    // {
-    //   "type": "title",
-    //   "format": "   -----------------------------------------------------\u001b[37D {#yellow}{user-name}{#} @ {#blue}{host-name}{#} ",
-    // },
     "break",
   ],
 }

@@ -228,7 +228,7 @@ print_status "Starting HyprX symlink setup..."
 mkdir -p "$HyprX"
 
 # List of config directories to symlink
-apps=("hypr" "kitty" "rofi" "waybar" "swaync" "scripts" "fastfetch")
+apps=("fastfetch" "hypr" "kitty" "matugen" "rofi" "scripts" "swaync" "fastfetch" "waybar" "wlogout" "matugen")
 
 for app in "${apps[@]}"; do
     # Check if the app directory exists in HyprX

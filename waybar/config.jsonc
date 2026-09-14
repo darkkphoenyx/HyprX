@@ -15,6 +15,7 @@
     "memory",
     "battery",
     "custom/notification",
+    "wlogout",
   ],
 
   "hyprland/workspaces": {
@@ -101,6 +102,7 @@
     },
     "format": "{capacity}% {icon}",
     "format-icons": ["", "", "", "", ""],
+    "format-plugged": "{capacity}% {icon} ",
     "max-length": 25,
   },
 

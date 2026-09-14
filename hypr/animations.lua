@@ -75,7 +75,6 @@ hl.animation({
     bezier = "easeOutQuint",
 })
 
-
 -- Windows
 hl.animation({
     leaf = "windows",

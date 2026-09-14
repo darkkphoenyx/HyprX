@@ -2,22 +2,22 @@
 set -e  # exit if any command fails
 set -u  # treat unset variables as errors
 
-# Your home and Dotfiles directories
-DOTFILES="$HOME/Dotfiles"
+# Your home and HyprX directories
+HyprX="$HOME/HyprX"
 CONFIG="$HOME/.config"
 
-echo "Starting Dotfiles setup..."
+echo "Starting HyprX setup..."
 
-# Ensure Dotfiles directory exists
-mkdir -p "$DOTFILES"
+# Ensure HyprX directory exists
+mkdir -p "$HyprX"
 
 # List of apps to symlink
 apps=("hypr" "kitty" "rofi" "waybar" "swaync", "scripts")
 
 for app in "${apps[@]}"; do
     if [ -e "$CONFIG/$app" ] && [ ! -L "$CONFIG/$app" ]; then
-        echo "Moving existing $app config into Dotfiles..."
-        mv "$CONFIG/$app" "$DOTFILES/$app"
+        echo "Moving existing $app config into HyprX..."
+        mv "$CONFIG/$app" "$HyprX/$app"
     fi
 
     # Remove existing symlink if any
@@ -28,7 +28,7 @@ for app in "${apps[@]}"; do
 
     # Create symlink
     echo "Creating symlink for $app..."
-    ln -s "$DOTFILES/$app" "$CONFIG/$app"
+    ln -s "$HyprX/$app" "$CONFIG/$app"
 done
 
-echo "Dotfiles setup complete!"
+echo "HyprX setup complete!"

@@ -97,7 +97,8 @@ PACMAN_PACKAGES=(
     "bluez-utils"    # Dependency
     "hyprshot"       # Screenshot
     "satty"          # Annotate on screenshot tool
-    "yazi"           # file manager
+    "yazi"           # Terminal based File Manager
+    "grim"           # Screenshot utility for Wayland
 )
 
 # Array of packages to install via yay (AUR)

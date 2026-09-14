@@ -8,7 +8,15 @@ HyprX is my personal Hyprland rice, crafted over weeks of breaking configs, fixi
 
 ## 📸 Preview
 
-> *(Will be added later)*
+![HyprX Preview](./preview-images/preview1.png)
+![HyprX Preview](./preview-images/preview2.png)
+![HyprX Preview](./preview-images/preview3.png)
+![HyprX Preview](./preview-images/preview4.png)
+![HyprX Preview](./preview-images/preview5.png)
+![HyprX Preview](./preview-images/preview6.png)
+![HyprX Preview](./preview-images/preview7.png)
+![HyprX Preview](./preview-images/preview8.png)
+![HyprX Preview](./preview-images/preview9.png)
 
 ---
 
@@ -18,7 +26,7 @@ HyprX is my personal Hyprland rice, crafted over weeks of breaking configs, fixi
 - 🖥️ Clean and minimal UI
 - 🎨 Custom Waybar, Rofi, Kitty configs
 - 🔔 Notifications via swaync
-- 🌙 Hyprsunset (night light)  `
+- 🌙 Hyprsunset (night light) `
 - 🧠 Zsh + Oh My Zsh + Powerlevel10k
 - 🔗 Fully symlinked config structure
 - 📦 Automated install script
@@ -52,6 +60,7 @@ cd HyprX
 ```
 
 Run
+
 ```bash
 ./install.sh
 ```
